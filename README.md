@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+`npm run css` to build the CSS.
+
 In the project directory, you can run:
 
 ### `yarn start`
