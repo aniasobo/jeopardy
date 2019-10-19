@@ -9,7 +9,7 @@ class App extends Component {
 
   render() {
     return(
-      <div>
+      <div className='mw9 center pa4 pt5-ns ph7-l'>
         <h1 className='helvetica f-headline lh-solid'>Jeopardy!</h1>
       </div>
     );

@@ -1,4 +1,4 @@
-const SET_CATEGORIES = 'SET_CATEGORIES';
+export const SET_CATEGORIES = 'SET_CATEGORIES';
 
 export function setCategories(categories) {
   return {
