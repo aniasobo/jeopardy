@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 
 class Clue extends Component {
+  constructor() {
+    super();
+
+    this.state = { reveal: false }
+  }
   render() {
     const { answer, question, value } = this.props.clue;
+    console.log("PROPS", this.props)
 
     return (
-      <div className='mw9 center pa4 pt5-ns ph7-l'>
-        <h4>{value || 'empty'}</h4>
+      <li className='pa3 pa4-ns bb b--black-10 helvetica' onClick={() => this.setState({ reveal: true })}>
+        <b className='db f3 mb1 tc'>{this.props.clue.category.title} for {value || 'empty'}</b>
+        <b className='db f3 mb1'>{question}</b>
         <hr />
-        <h5>{question}</h5>
-        <hr />
-        <h5>{answer}</h5>
-      </div>
+        <span className={this.state.reveal ? 'f5 db lh-copy measure o-0' : 'f5 db lh-copy measure o-90'}>{answer}</span>
+      </li>
     )
   }
 }
