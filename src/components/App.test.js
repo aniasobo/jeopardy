@@ -2,7 +2,7 @@ import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { App } from './App';
-import categories from '../data/fixtures';
+import { categories } from '../data/fixtures';
 
 configure({ adapter: new Adapter() });
 const props = { categories };
